@@ -21,12 +21,11 @@ This is a reference/guide to help fellow CU80 owners flash firmware and/or recov
   - This can be configured to an extent by the end user, and is baked into a new firmware .hex, this type of firmware should be considered "untested" until you flash it and confirm its working yourself.
 
 
-
 ## Flashing Requirements
 
 
-### [QMK Toolkit](https://github.com/qmk/qmk_toolbox/releases/latest)
-The QMK Toolkit is designed to make flashing firmware simple the only real thing to watch out for is the "device not found" error which can be fixed using [Zadig as detaiiled in the QMK documentation](https://docs.qmk.fm/#/driver_installation_zadig)
+### [QMK Toolbox](https://github.com/qmk/qmk_toolbox/releases/latest)
+The QMK Toolbox is designed to make flashing firmware simple the only real thing to watch out for is the "device not found" error which can be fixed using [Zadig as detailed in the QMK documentation](https://docs.qmk.fm/#/driver_installation_zadig)
 
 
 ### A valid .hex file for your keyboard
@@ -34,7 +33,8 @@ The QMK Toolkit is designed to make flashing firmware simple the only real thing
 - VIA compatible .hex files can be found here [caniusevia](https://caniusevia.com/docs/download_firmware/)
 - .hex files from [qmk.fm](https://qmk.fm)
 - .hex file(s) will also be posted in the #latest-firmware channel on the [Capsunlocked discord server](https://discord.com/invite/c6Eytwc).
-- A .hex file created using QMK Configurator, you should also have a working .hex to use as a "roll back".
+- A .hex file created using QMK Configurator, you should also have a working .hex to use as a "roll back". **please note that the online confirgurator has a cu80 listed, this is the V1 firmware and is not compatible with the V2 board.  Please wait for official support for the capsunlocked/cu80 before using the configurator**
+
 
 ## Getting ready to flash
 
@@ -43,13 +43,9 @@ Launch QMK Toolbox
 
 ##### Select firmware to flash
 
-In QMK Toolbox select Open & navigate to your .hex file
+In QMK Toolbox select Open & navigate to your .hex file and click open
 
-![image-20210131014404887](img/qmk-open.png)
-
-press open
-
-![image-20210131014638536](img/qmk-firmware.png)
+![qmk-open](img/qmk-open.gif)
 
 
 ##### Enter DFU (device firmware upgrade) mode
@@ -78,7 +74,7 @@ This mode will persist until firmware is flashed or keyboard power is cycled unl
  - Remove the backplate
  - Plug in the keyboard
  - Press the physical reset button on the back of the PCB
-![image-20210131015849236](img/reset-hard.png)
+![reset-hard](img/reset-hard.png)
 
 
 ##### Verify you are in Bootloader Mode
@@ -89,16 +85,15 @@ Shortly after re-connecting you should see a yellow line appear in your QMK Tool
 
 If you have a different message check out the [Zadig](https://docs.qmk.fm/#/driver_installation_zadig) troubleshooting steps on the QMK site.
 
-![image-20210131015331447](img/dfu-mode.png)
+![dfu-mode](img/dfu-mode.png)
 
 #### Flash the firmware
 
 Click flash!
 
-![image-20210131021809343](img/flash-success.png)
+![flash-success](img/flashing.gif)
 
 On completion the keyboard should disconnect and begin <u>functioning</u> as per its new firmware.
-
 
 
 
@@ -113,33 +108,43 @@ On completion the keyboard should disconnect and begin <u>functioning</u> as per
 If your keyboard is not automatically detected it can caused by several factors
 
 1. You do not have a VIA compatible firmware flashed
-2. The version of VIA you are using does not have the keymap for your keyboard it may take a little while for the board to be added to the software.
-   - It is possible to sideload a keyboard/keymap if it is not recognised by VIA but has a valid firmware, but that's outside the scope of this guide for now. 
+2. The version of the VIA app you are using does not include the keymap for your board it may take a little while for the board to be added to the software. See [sideloading in via](#sideloading-in-via).
 3. You are still in bootloader mode
   - You would not be able to type if that was the case.
+
+
+### Sideloading in VIA
+
+A CU80v2.json file is avaliable for sideloading into alongside VIA firmware while native support is pending.
+This can be found in Discord along with a VIA .hex file *if you cannot find it DM maz#1529 and I'll send you a copy when I see your message*
+
+![sideload](sideload.gif)
+
 
 ### Basic VIA Configuration (like real basic)
 
 *Things may be appear differently for you as this is from a test firmware/keymap*
 
 Once your keyboard has been detected in VIA, you should be presented with the following screen.
-![image-20210131022735171](img/via-loaded.png)
+![via-loaded](img/via-loaded.png)
 
 From here you can edit most functions of the keyboard from creating macros to rebinding layers, and switch between ANSI/ISO layouts.
 
 ###### Switching between ANSI/ISO layouts
 
 
-![SOEh3WtgrE](img/layout.gif)
+![layout](img/layout.gif)
 
 
 ###### Remapping a Key
 
 
-![rN3IQ9eTrl](img/remap.gif)
+![remapping](img/remap.gif)
 
 
 ###### Editing Layers
 
 
-![pAjccqmDD1](img/layer.gif)
+![layer](img/layer.gif)
+
+
