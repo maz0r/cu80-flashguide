@@ -1,6 +1,7 @@
-[TOC]
-
-
+  * [Important notes](#important-notes)
+  * [Flashing Requirements](#flashing-requirements)
+  * [Getting ready to flash](#getting-ready-to-flash)
+  * [Configuration using VIA](#configuration-using-via)
 
 # Capsunlocked CU80 firmware flashing guide
 
@@ -21,7 +22,7 @@ This is a reference/guide to help fellow CU80 owners flash firmware and/or recov
 
 
 
-## Flashing Requirement(s)
+## Flashing Requirements
 
 
 ### [QMK Toolkit](https://github.com/qmk/qmk_toolbox/releases/latest)
@@ -32,69 +33,52 @@ The QMK Toolkit is designed to make flashing firmware simple the only real thing
 
 - VIA compatible .hex files can be found here [caniusevia](https://caniusevia.com/docs/download_firmware/)
 - .hex files from [qmk.fm](https://qmk.fm)
- - .hex file(s) will also be posted in the #latest-firmware channel on the [Capsunlocked discord server](https://discord.com/invite/c6Eytwc).
- - A .hex file created using QMK Configurator, you should also have a working .hex to use as a "roll back".
-
-
+- .hex file(s) will also be posted in the #latest-firmware channel on the [Capsunlocked discord server](https://discord.com/invite/c6Eytwc).
+- A .hex file created using QMK Configurator, you should also have a working .hex to use as a "roll back".
 
 ## Getting ready to flash
 
 Connect your keyboard
-
 Launch QMK Toolbox
 
 ##### Select firmware to flash
 
-​	In QMK Toolbox select Open & navigate to your .hex file
+In QMK Toolbox select Open & navigate to your .hex file
 
 ![image-20210131014404887](img/qmk-open.png)
 
-​	hit open
-​					![image-20210131014638536](img/qmk-firmware.png)
+press open
 
+![image-20210131014638536](img/qmk-firmware.png)
 
 
 ##### Enter DFU (device firmware upgrade) mode
 
-This mode will persist until firmware is flashed or keyboard power is cycled.
+This mode will persist until firmware is flashed or keyboard power is cycled unless no firmware is present.
 
 ###### Stock firmware
 
- - If the keyboard is functional 
-   
+ - If the keyboard is functional  
     - FN + DELETE will reboot into DFU mode
-    
-- If the keyboard is not functional use the [Hardware Reset](#hardware-reset)
-
-    
+ - If the keyboard is not functional use the [Hardware Reset](#hardware-reset)
 
 ###### VIA Firmware
 
-- If the keyboard is functional
-
-  - FN + ESC will reboot into DFU mode
-
-- If not use the [Bootmagic](#bootmagic-firmware) method
-
-  
+ - If the keyboard is functional
+   - FN + ESC will reboot into DFU mode
+ - If not use the [Bootmagic](#bootmagic-firmware) method
 
 ###### Bootmagic Firmware
 
-- Disconnect the USB from the keyboard
-- Reconnect the USB cable while holding ESC on the keyboard
-  
-
+ - Disconnect the USB from the keyboard
+ - Reconnect the USB cable while holding ESC on the keyboard
 
 ###### Hardware Reset
 
  - Remove the backplate
-
  - Plug in the keyboard
-
  - Press the physical reset button on the back of the PCB
-
-   ![image-20210131015849236](img/reset-hard.png)
-
+![image-20210131015849236](img/reset-hard.png)
 
 
 ##### Verify you are in Bootloader Mode
@@ -109,11 +93,11 @@ If you have a different message check out the [Zadig](https://docs.qmk.fm/#/driv
 
 #### Flash the firmware
 
-​	Click flash!
+Click flash!
 
 ![image-20210131021809343](img/flash-success.png)
 
-​	On completion the keyboard should disconnect and begin <u>functioning</u> as per its new firmware.
+On completion the keyboard should disconnect and begin <u>functioning</u> as per its new firmware.
 
 
 
@@ -124,44 +108,38 @@ If you have a different message check out the [Zadig](https://docs.qmk.fm/#/driv
 - Download [VIA](https://github.com/the-via/releases/releases/latest)
 
 - Launch VIA
-
    
 
-   If your keyboard is not automatically detected it can caused by several factors
+If your keyboard is not automatically detected it can caused by several factors
 
-       	1. You do not have a VIA compatible firmware flashed
-      2. The version of VIA you are using does not have the keymap for your keyboard you should update (or) wait for support
-         - It is possible to sideload a keyboard/keymap if it is not recognised by VIA but has a valid firmware, but that's outside the scope of this guide.
-
-   3. You are still in bootloader mode 
-      - You would not be able to type if that was the case.
+1. You do not have a VIA compatible firmware flashed
+2. The version of VIA you are using does not have the keymap for your keyboard you should update (or) wait for support
+  - It is possible to sideload a keyboard/keymap if it is not recognised by VIA but has a valid firmware, but that's outside the scope of this guide. 
+3. You are still in bootloader mode
+  - You would not be able to type if that was the case.
 
 ### Basic VIA Configuration (like real basic)
 
 *Things may be appear differently for you as this is from a test firmware/keymap*
 
-	Once your keyboard has been detected in VIA, you should be presented with the following screen.
-
+Once your keyboard has been detected in VIA, you should be presented with the following screen.
 ![image-20210131022735171](img/via-loaded.png)
-
-
 
 From here you can edit most functions of the keyboard from creating macros to rebinding layers, and switch between ANSI/ISO layouts.
 
-
-
 ###### Switching between ANSI/ISO layouts
+
 
 ![SOEh3WtgrE](img/layout.gif)
 
 
-
 ###### Remapping a Key
+
 
 ![rN3IQ9eTrl](img/remap.gif)
 
 
-
 ###### Editing Layers
+
 
 ![pAjccqmDD1](img/layer.gif)
