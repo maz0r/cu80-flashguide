@@ -33,7 +33,9 @@ The QMK Toolbox is designed to make flashing firmware simple the only real thing
 - VIA compatible .hex files can be found here [caniusevia](https://caniusevia.com/docs/download_firmware/)
 - .hex files from [qmk.fm](https://qmk.fm)
 - .hex file(s) will also be posted in the #latest-firmware channel on the [Capsunlocked discord server](https://discord.com/invite/c6Eytwc).
-- A .hex file created using QMK Configurator, you should also have a working .hex to use as a "roll back". **please note that the online confirgurator has a cu80 listed, this is the V1 firmware and is not compatible with the V2 board.  Please wait for official support for the capsunlocked/cu80 before using the configurator**
+- .hex file(s) created using QMK Configurator. [*Please note that the online configurator has a cu80 listed, this is the V1 board firmware and is **not** compatible with the V2 board. Please wait for official support for the capsunlocked/cu80 before using the configurator*]
+
+In all cases you should also have a working .hex to use as a "roll back". 
 
 
 ## Getting ready to flash
