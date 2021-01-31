@@ -113,8 +113,8 @@ On completion the keyboard should disconnect and begin <u>functioning</u> as per
 If your keyboard is not automatically detected it can caused by several factors
 
 1. You do not have a VIA compatible firmware flashed
-2. The version of VIA you are using does not have the keymap for your keyboard you should update (or) wait for support
-  - It is possible to sideload a keyboard/keymap if it is not recognised by VIA but has a valid firmware, but that's outside the scope of this guide. 
+2. The version of VIA you are using does not have the keymap for your keyboard it may take a little while for the board to be added to the software.
+   - It is possible to sideload a keyboard/keymap if it is not recognised by VIA but has a valid firmware, but that's outside the scope of this guide for now. 
 3. You are still in bootloader mode
   - You would not be able to type if that was the case.
 
