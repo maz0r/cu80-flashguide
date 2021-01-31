@@ -118,7 +118,7 @@ If your keyboard is not automatically detected it can caused by several factors
 A CU80v2.json file is avaliable for sideloading into alongside VIA firmware while native support is pending.
 This can be found in Discord along with a VIA .hex file *if you cannot find it DM maz#1529 and I'll send you a copy when I see your message*
 
-![sideload](sideload.gif)
+![sideload](img/sideload.gif)
 
 
 ### Basic VIA Configuration (like real basic)
