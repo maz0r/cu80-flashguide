@@ -44,8 +44,18 @@ This is a build of the firmware directly from the maintainers branch compiled by
 
 These files are TEST firmware, they have been tested by several community members and are functional for both ISO and ANSI keymaps.
 
-[QMK FIRMWARE](test_binaries/QMK)
-[VIA FIRMWARE](test_binaries/VIA) - Including the required .json files for [sideloading in via](#sideloading-in-via)
+
+**RIGHT CLICK SAVE AS!!**
+
+|Firmware Type |Layout|Link|
+|:---|:---|:---|
+|QMK|ANSI| [QMK ANSI](test_binaries/QMKcapsunlocked_cu80_v2_ansi_default.hex) |
+|VIA|ANSI| [VIA ANSI](test_binaries/capsunlocked_cu80_v2_ansi_via.hex) & [ANSI Sideload](test_binaries/cu80_v2_ansi.json) |
+|QMK|ISO| [QMK ISO](test_binaries/QMKcapsunlocked_cu80_v2_iso_default.hex) |
+|VIA|ISO| [VIA ISO](test_binaries/capsunlocked_cu80_v2_iso_via.hex) & [ANSI Sideload](test_binaries/cu80_v2_iso.json) |
+
+
+For sideloading into VIA see [sideloading in via](#sideloading-in-via)
 
 
 
