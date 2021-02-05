@@ -37,6 +37,17 @@ The QMK Toolbox is designed to make flashing firmware simple the only real thing
 
 In all cases you should also have a working .hex to use as a "roll back". 
 
+#### Test Binaries - temporary
+
+To simplify this I've included links to the Test Binaries posted on 2021-02-04 by the maintainer.
+This is a build of the firmware directly from the maintainers branch compiled by him while he awaits acceptance of the official firmware merger into QMK and VIA master branches.
+
+These files are TEST firmware, they have been tested by several community members and are functional for both ISO and ANSI keymaps.
+
+[QMK FIRMWARE](test_binaries/QMK)
+[VIA FIRMWARE](test_binaries/VIA) - Including the required .json files for [sideloading in via](#sideloading-in-via)
+
+
 
 ## Getting ready to flash
 
@@ -86,6 +97,8 @@ If you have successfully entered bootloader mode, the keyboard should disconnect
 Shortly after re-connecting you should see a yellow line appear in your QMK Toolbox window as per the below image.
 
 If you have a different message check out the [Zadig](https://docs.qmk.fm/#/driver_installation_zadig) troubleshooting steps on the QMK site.
+
+**for MacOS users you may have to tick the "Auto Flash Firmware" button for the device to be detected by QMK Toolkit!**
 
 ![dfu-mode](img/dfu-mode.png)
 
