@@ -58,10 +58,10 @@ These files are TEST firmware, they have been tested by several community member
 <details>
 <summary>Layouts</summary>
 
-![ansi_l1](img/ansi_v2_default_l1.jpg)
-![ansi_l2](img/ansi_v2_default_l2.jpg)
-![iso_l1](img/iso_v2_default_l1.jpg)
-![iso_l2](img/iso_v2_default_l2.jpg)
+![ansi_l1](img/ansi_v2_default_l1.JPG)
+![ansi_l2](img/ansi_v2_default_l2.JPG)
+![iso_l1](img/iso_v2_default_l1.JPG)
+![iso_l2](img/iso_v2_default_l2.JPG)
 </details>  
 
 
