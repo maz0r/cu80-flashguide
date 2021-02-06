@@ -55,7 +55,19 @@ These files are TEST firmware, they have been tested by several community member
 |VIA|ISO| [VIA ISO](https://github.com/maz0r/cu80-flashguide/raw/main/test_binaries/VIA/capsunlocked_cu80_v2_iso_via.hex) & [ANSI Sideload](https://github.com/maz0r/cu80-flashguide/raw/main/test_binaries/VIA/cu80_v2_iso.json) |
 
 
+<details>
+<summary>Layouts</summary>
+
+![ansi_l1](img/ansi_v2_default_l1.jpg)
+![ansi_l2](img/ansi_v2_default_l2.jpg)
+![iso_l1](img/iso_v2_default_l1.jpg)
+![iso_l2](img/iso_v2_default_l2.jpg)
+</details>  
+
+
+
 For sideloading into VIA see [sideloading in via](#sideloading-in-via)
+
 
 
 
@@ -128,7 +140,7 @@ On completion the keyboard should disconnect and begin <u>functioning</u> as per
 - Download [VIA](https://github.com/the-via/releases/releases/latest)
 
 - Launch VIA
-   
+  
 
 If your keyboard is not automatically detected it can caused by several factors
 
