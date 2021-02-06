@@ -49,7 +49,7 @@ These files are TEST firmware, they have been tested by several community member
 
 |Firmware Type |Layout|Link|
 |:---|:---|:---|
-|QMK|ANSI| [QMK ANSI](https://github.com/maz0r/cu80-flashguide/raw/main/test_binaries/capsunlocked_cu80_v2_ansi_default.hex) |
+|QMK|ANSI| [QMK ANSI](https://github.com/maz0r/cu80-flashguide/raw/main/test_binaries/QMK/capsunlocked_cu80_v2_ansi_default.hex) |
 |VIA|ANSI| [VIA ANSI](https://github.com/maz0r/cu80-flashguide/raw/main/test_binaries/VIA/capsunlocked_cu80_v2_ansi_via.hex) & [ANSI Sideload](https://github.com/maz0r/cu80-flashguide/raw/main/test_binaries/VIA/cu80_v2_ansi.json) |
 |QMK|ISO| [QMK ISO](https://github.com/maz0r/cu80-flashguide/raw/main/test_binaries/QMK/capsunlocked_cu80_v2_iso_default.hex) |
 |VIA|ISO| [VIA ISO](https://github.com/maz0r/cu80-flashguide/raw/main/test_binaries/VIA/capsunlocked_cu80_v2_iso_via.hex) & [ANSI Sideload](https://github.com/maz0r/cu80-flashguide/raw/main/test_binaries/VIA/cu80_v2_iso.json) |
