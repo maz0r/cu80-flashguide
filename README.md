@@ -55,6 +55,14 @@ These files are TEST firmware, they have been tested by several community member
 |VIA|ISO| [VIA ISO](https://github.com/maz0r/cu80-flashguide/raw/main/test_binaries/VIA/capsunlocked_cu80_v2_iso_via.hex) & [ISO Sideload](https://github.com/maz0r/cu80-flashguide/raw/main/test_binaries/VIA/cu80_v2_iso.json) |
 
 
+** RGB Matrix Firmware files **
+
+|Firmware Type |Layout|Link|
+|:---|:---|:---|
+|VIA|ANSI RGB| [VIA ANSI RGB](https://github.com/maz0r/cu80-flashguide/raw/main/test_binaries/VIA/capsunlocked_cu80_v2_ansi_rgb_via.hex) & [ANSI Sideload](https://github.com/maz0r/cu80-flashguide/raw/main/test_binaries/VIA/cu80_v2_ansi_rgb.json) |
+|VIA|ISO RGB| [VIA ISO RGB](https://github.com/maz0r/cu80-flashguide/raw/main/test_binaries/VIA/capsunlocked_cu80_v2_iso_rgb_via.hex) & [ISO Sideload](https://github.com/maz0r/cu80-flashguide/raw/main/test_binaries/VIA/cu80_v2_iso_rgb.json) |
+
+
 <details>
 <summary>Layouts</summary>
 
