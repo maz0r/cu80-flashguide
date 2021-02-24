@@ -30,37 +30,25 @@ The QMK Toolbox is designed to make flashing firmware simple the only real thing
 
 ### A valid .hex file for your keyboard
 
-- VIA compatible .hex files can be found here [caniusevia](https://caniusevia.com/docs/download_firmware/)
+- VIA compatible .hex files can be found at [caniusevia](https://caniusevia.com/docs/download_firmware/) or [here with fixes for the RGB keymaps](https://github.com/Xelus22/QMK-VIA-Hex)
 - .hex files from [qmk.fm](https://qmk.fm)
 - .hex file(s) will also be posted in the #latest-firmware channel on the [Capsunlocked discord server](https://discord.com/invite/c6Eytwc).
-- .hex file(s) created using QMK Configurator. [*Please note that the online configurator has a cu80 listed, this is the V1 board firmware and is **not** compatible with the V2 board. Please wait for official support for the capsunlocked/cu80 before using the configurator*]
+- .hex file(s) created using QMK Configurator. [*for v2 PCB's you must use the capsunlocked/cu80 to generate firmware, not the v1 cu80 entry*]
 
-In all cases you should also have a working .hex to use as a "roll back". 
+In all cases you should also have a working .hex from #latest-firmware to use as a "roll back". 
 
-#### Test Binaries - temporary
+#### Test Binaries - removed!
 
-To simplify this I've included links to the Test Binaries posted on 2021-02-04 by the maintainer.
-This is a build of the firmware directly from the maintainers branch compiled by him while he awaits acceptance of the official firmware merger into QMK and VIA master branches.
+Links removed, but files remain in the repo.
 
-These files are TEST firmware, they have been tested by several community members and are functional for both ISO and ANSI keymaps.
-
+#### VIA Sideload files - Temporary
 
 **RIGHT CLICK SAVE AS!!**
 
 |Firmware Type |Layout|Link|
 |:---|:---|:---|
-|QMK|ANSI| [QMK ANSI](https://github.com/maz0r/cu80-flashguide/raw/main/test_binaries/QMK/capsunlocked_cu80_v2_ansi_default.hex) |
-|VIA|ANSI| [VIA ANSI](https://github.com/maz0r/cu80-flashguide/raw/main/test_binaries/VIA/capsunlocked_cu80_v2_ansi_via.hex) & [ANSI Sideload](https://github.com/maz0r/cu80-flashguide/raw/main/test_binaries/VIA/cu80_v2_ansi.json) |
-|QMK|ISO| [QMK ISO](https://github.com/maz0r/cu80-flashguide/raw/main/test_binaries/QMK/capsunlocked_cu80_v2_iso_default.hex) |
-|VIA|ISO| [VIA ISO](https://github.com/maz0r/cu80-flashguide/raw/main/test_binaries/VIA/capsunlocked_cu80_v2_iso_via.hex) & [ISO Sideload](https://github.com/maz0r/cu80-flashguide/raw/main/test_binaries/VIA/cu80_v2_iso.json) |
-
-
-** RGB Matrix Firmware files **
-
-|Firmware Type |Layout|Link|
-|:---|:---|:---|
-|VIA|ANSI RGB| [VIA ANSI RGB](https://github.com/maz0r/cu80-flashguide/raw/main/test_binaries/VIA/capsunlocked_cu80_v2_ansi_rgb_via.hex) & [ANSI Sideload](https://github.com/maz0r/cu80-flashguide/raw/main/test_binaries/VIA/cu80_v2_ansi_rgb.json) |
-|VIA|ISO RGB| [VIA ISO RGB](https://github.com/maz0r/cu80-flashguide/raw/main/test_binaries/VIA/capsunlocked_cu80_v2_iso_rgb_via.hex) & [ISO Sideload](https://github.com/maz0r/cu80-flashguide/raw/main/test_binaries/VIA/cu80_v2_iso_rgb.json) |
+|VIA|ANSI| [ANSI Sideload](https://github.com/maz0r/cu80-flashguide/raw/main/test_binaries/VIA/cu80_v2_ansi.json) |
+|VIA|ISO| [ISO Sideload](https://github.com/maz0r/cu80-flashguide/raw/main/test_binaries/VIA/cu80_v2_iso.json) |
 
 
 <details>
