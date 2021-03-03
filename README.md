@@ -49,7 +49,8 @@ Links removed, but files remain in the repo.
 |:---|:---|:---|
 |VIA|ANSI| [ANSI Sideload](https://github.com/maz0r/cu80-flashguide/raw/main/test_binaries/VIA/cu80_v2_ansi.json) |
 |VIA|ISO| [ISO Sideload](https://github.com/maz0r/cu80-flashguide/raw/main/test_binaries/VIA/cu80_v2_iso.json) |
-
+|VIA|ANSI_RGB| [ANSI RGB Sideload](https://github.com/maz0r/cu80-flashguide/raw/main/test_binaries/VIA/cu80_v2_ansi_rgb.json) |
+|VIA|ISO_RGB| [ISO RGB Sideload](https://github.com/maz0r/cu80-flashguide/raw/main/test_binaries/VIA/cu80_v2_iso_rgb.json) |
 
 <details>
 <summary>Layouts</summary>
