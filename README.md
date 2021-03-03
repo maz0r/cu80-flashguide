@@ -7,14 +7,11 @@
 
 Quick guide on flashing your stock CU80 (v2 PCB) to a newer firmware version.
 
-This is a reference/guide to help fellow CU80 owners flash firmware and/or recover from a bad flash.
+This is a reference/guide to help fellow CU80 v2 owners flash firmware and/or recover from a bad flash.
 
 ## Important notes
 
-- VIA firmware is built to support both ANSI and ISO with a single unified .hex.
-  - This allows you to switch layouts dynamically without flashing new firmware for each change.
-
-- QMK firmware as shipped with Round 2 boards and custom built firmware through the 
+- Basic QMK firmware was shipped with Round 2 boards 
   - This allows for little to no modifications outside changing the LED lighting.
 
 - QMK Configurator is targeted to a specific board layout so ensure you use the correct file when flashing.
@@ -30,27 +27,40 @@ The QMK Toolbox is designed to make flashing firmware simple the only real thing
 
 ### A valid .hex file for your keyboard
 
-- VIA compatible .hex files can be found at [caniusevia](https://caniusevia.com/docs/download_firmware/) or [here with fixes for the RGB keymaps](https://github.com/Xelus22/QMK-VIA-Hex)
+- VIA compatible .hex files will eventually be found at [caniusevia](https://caniusevia.com/docs/download_firmware/) or [here with fixes for the RGB keymaps](https://github.com/Xelus22/QMK-VIA-Hex)
 - .hex files from [qmk.fm](https://qmk.fm)
 - .hex file(s) will also be posted in the #latest-firmware channel on the [Capsunlocked discord server](https://discord.com/invite/c6Eytwc).
 - .hex file(s) created using QMK Configurator. [*for v2 PCB's you must use the capsunlocked/cu80 to generate firmware, not the v1 cu80 entry*]
 
 In all cases you should also have a working .hex from #latest-firmware to use as a "roll back". 
 
-#### Test Binaries - removed!
+#### Test Binaries
 
-Links removed, but files remain in the repo.
-
-#### VIA Sideload files - Temporary
+The following test binaries were built using the recently released QMK 0.12.8. If you are having issues with your board not waking from sleep, please give these a go:
 
 **RIGHT CLICK SAVE AS!!**
 
 |Firmware Type |Layout|Link|
 |:---|:---|:---|
-|VIA|ANSI| [ANSI Sideload](https://github.com/maz0r/cu80-flashguide/raw/main/test_binaries/VIA/cu80_v2_ansi.json) |
-|VIA|ISO| [ISO Sideload](https://github.com/maz0r/cu80-flashguide/raw/main/test_binaries/VIA/cu80_v2_iso.json) |
-|VIA|ANSI_RGB| [ANSI RGB Sideload](https://github.com/maz0r/cu80-flashguide/raw/main/test_binaries/VIA/cu80_v2_ansi_rgb.json) |
-|VIA|ISO_RGB| [ISO RGB Sideload](https://github.com/maz0r/cu80-flashguide/raw/main/test_binaries/VIA/cu80_v2_iso_rgb.json) |
+|Default|ANSI|[Link](test_binaries/QMK/capsunlocked_cu80_v2_ansi_default.0.12.8.hex)|
+|Default|ISO|[Link](test_binaries/QMK/capsunlocked_cu80_v2_iso_default.0.12.8.hex)|
+|RGB|ANSI|[Link](test_binaries/QMK/capsunlocked_cu80_v2_ansi_rgb_default.0.12.8.hex)|
+|RGB|ISO|[Link](test_binaries/QMK/capsunlocked_cu80_v2_iso_rgb_default.0.12.8.hex)|
+|VIA|ANSI|[Link](test_binaries/VIA/capsunlocked_cu80_v2_ansi_via.0.12.8.hex)|
+|VIA|ISO|[Link](test_binaries/VIA/capsunlocked_cu80_v2_iso_via.0.12.8.hex)|
+|VIA RGB|ANSI|[Link](test_binaries/VIA/capsunlocked_cu80_v2_ansi_rgb_via.0.12.8.hex)|
+|VIA RGB|ISO|[Link](test_binaries/VIA/capsunlocked_cu80_v2_iso_rgb_via.0.12.8.hex)|
+
+#### Test VIA Sideload files
+
+**RIGHT CLICK SAVE AS!!**
+
+|Firmware Type |Layout|Link|
+|:---|:---|:---|
+|VIA|ANSI|[ANSI Sideload](test_binaries/VIA/cu80_v2_ansi.json) |
+|VIA|ISO|[ISO Sideload](test_binaries/VIA/cu80_v2_iso.json) |
+|VIA RGB|ANSI|[ANSI RGB Sideload](test_binaries/VIA/cu80_v2_ansi_rgb.json) |
+|VIA RGB|ISO|[ISO RGB Sideload](test_binaries/VIA/cu80_v2_iso_rgb.json) |
 
 <details>
 <summary>Layouts</summary>
@@ -121,6 +131,10 @@ If you have a different message check out the [Zadig](https://docs.qmk.fm/#/driv
 
 ![dfu-mode](img/dfu-mode.png)
 
+#### Clearing the EEPROM
+
+It's recommended that you clear the EEPROM if you're having any weird issues with any firmware you try, especially VIA-based firmwares. They store their configuration in spare EEPROM space, so clearing it will let the board start from a known good place so you can set it up again. Use the _Clear EEPROM_ button in the bottom left of the QMK Toolbox UI to do that, then flash a firmware again straight afterwards as Toolbox asks you to!
+
 #### Flash the firmware
 
 Click flash!
@@ -135,7 +149,6 @@ On completion the keyboard should disconnect and begin <u>functioning</u> as per
 
 ### Setup
 - Download [VIA](https://github.com/the-via/releases/releases/latest)
-
 - Launch VIA
   
 
@@ -149,8 +162,7 @@ If your keyboard is not automatically detected it can caused by several factors
 
 ### Sideloading in VIA
 
-A CU80v2.json file is avaliable for sideloading into alongside VIA firmware while native support is pending.
-This can be found in Discord along with a VIA .hex file *if you cannot find it DM maz#1529 and I'll send you a copy when I see your message*
+See above for the test .json files for sideloading while official support in VIA is still pending.
 
 ![sideload](img/sideload.gif)
 
@@ -162,13 +174,7 @@ This can be found in Discord along with a VIA .hex file *if you cannot find it D
 Once your keyboard has been detected in VIA, you should be presented with the following screen.
 ![via-loaded](img/via-loaded.png)
 
-From here you can edit most functions of the keyboard from creating macros to rebinding layers, and switch between ANSI/ISO layouts.
-
-###### Switching between ANSI/ISO layouts
-
-
-![layout](img/layout.gif)
-
+From here you can edit most functions of the keyboard from creating macros to rebinding layers.
 
 ###### Remapping a Key
 
