@@ -59,7 +59,7 @@ The following test binaries were built using the recently released QMK 0.12.8. I
 |:---|:---|:---|
 |VIA|ANSI|[ANSI Sideload](https://raw.githubusercontent.com/maz0r/cu80-flashguide/main/test_binaries/VIA/cu80_v2_ansi.json) |
 |VIA|ISO|[ISO Sideload](https://raw.githubusercontent.com/maz0r/cu80-flashguide/main/test_binaries/VIA/cu80_v2_iso.json) |
-|VIA RGB|ANSI|[ANSI RGB Sideload](https://raw.githubusercontent.com/maz0r/cu80-flashguide/main/test_binaries/VIA/cu80_v2_ansi_rgb.json) |
+|VIA RGB|ANSI|[ANSI RGB Sideload](test_binaries/VIA/cu80_v2_ansi_rgb.json) |
 |VIA RGB|ISO|[ISO RGB Sideload](https://raw.githubusercontent.com/maz0r/cu80-flashguide/main/test_binaries/VIA/cu80_v2_iso_rgb.json) |
 
 <details>
