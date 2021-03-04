@@ -42,14 +42,14 @@ The following test binaries were built using the recently released QMK 0.12.8. I
 
 |Firmware Type |Layout|Link|
 |:---|:---|:---|
-|Default|ANSI|[Link](test_binaries/QMK/capsunlocked_cu80_v2_ansi_default.0.12.8.hex)|
-|Default|ISO|[Link](test_binaries/QMK/capsunlocked_cu80_v2_iso_default.0.12.8.hex)|
-|RGB|ANSI|[Link](test_binaries/QMK/capsunlocked_cu80_v2_ansi_rgb_default.0.12.8.hex)|
-|RGB|ISO|[Link](test_binaries/QMK/capsunlocked_cu80_v2_iso_rgb_default.0.12.8.hex)|
-|VIA|ANSI|[Link](test_binaries/VIA/capsunlocked_cu80_v2_ansi_via.0.12.8.hex)|
-|VIA|ISO|[Link](test_binaries/VIA/capsunlocked_cu80_v2_iso_via.0.12.8.hex)|
-|VIA RGB|ANSI|[Link](test_binaries/VIA/capsunlocked_cu80_v2_ansi_rgb_via.0.12.8.hex)|
-|VIA RGB|ISO|[Link](test_binaries/VIA/capsunlocked_cu80_v2_iso_rgb_via.0.12.8.hex)|
+|Default|ANSI|[Link](https://raw.githubusercontent.com/maz0r/cu80-flashguide/main/test_binaries/QMK/capsunlocked_cu80_v2_ansi_default.0.12.8.hex)|
+|Default|ISO|[Link](https://raw.githubusercontent.com/maz0r/cu80-flashguide/main/test_binaries/QMK/capsunlocked_cu80_v2_iso_default.0.12.8.hex)|
+|RGB|ANSI|[Link](https://raw.githubusercontent.com/maz0r/cu80-flashguide/main/test_binaries/QMK/capsunlocked_cu80_v2_ansi_rgb_default.0.12.8.hex)|
+|RGB|ISO|[Link](https://raw.githubusercontent.com/maz0r/cu80-flashguide/main/test_binaries/QMK/capsunlocked_cu80_v2_iso_rgb_default.0.12.8.hex)|
+|VIA|ANSI|[Link](https://raw.githubusercontent.com/maz0r/cu80-flashguide/main/test_binaries/VIA/capsunlocked_cu80_v2_ansi_via.0.12.8.hex)|
+|VIA|ISO|[Link](https://raw.githubusercontent.com/maz0r/cu80-flashguide/main/test_binaries/VIA/capsunlocked_cu80_v2_iso_via.0.12.8.hex)|
+|VIA RGB|ANSI|[Link](https://raw.githubusercontent.com/maz0r/cu80-flashguide/main/test_binaries/VIA/capsunlocked_cu80_v2_ansi_rgb_via.0.12.8.hex)|
+|VIA RGB|ISO|[Link](https://raw.githubusercontent.com/maz0r/cu80-flashguide/main/test_binaries/VIA/capsunlocked_cu80_v2_iso_rgb_via.0.12.8.hex)|
 
 #### Test VIA Sideload files
 
@@ -57,10 +57,10 @@ The following test binaries were built using the recently released QMK 0.12.8. I
 
 |Firmware Type |Layout|Link|
 |:---|:---|:---|
-|VIA|ANSI|[ANSI Sideload](test_binaries/VIA/cu80_v2_ansi.json) |
-|VIA|ISO|[ISO Sideload](test_binaries/VIA/cu80_v2_iso.json) |
-|VIA RGB|ANSI|[ANSI RGB Sideload](test_binaries/VIA/cu80_v2_ansi_rgb.json) |
-|VIA RGB|ISO|[ISO RGB Sideload](test_binaries/VIA/cu80_v2_iso_rgb.json) |
+|VIA|ANSI|[ANSI Sideload](https://raw.githubusercontent.com/maz0r/cu80-flashguide/main/test_binaries/VIA/cu80_v2_ansi.json) |
+|VIA|ISO|[ISO Sideload](https://raw.githubusercontent.com/maz0r/cu80-flashguide/main/test_binaries/VIA/cu80_v2_iso.json) |
+|VIA RGB|ANSI|[ANSI RGB Sideload](https://raw.githubusercontent.com/maz0r/cu80-flashguide/main/test_binaries/VIA/cu80_v2_ansi_rgb.json) |
+|VIA RGB|ISO|[ISO RGB Sideload](https://raw.githubusercontent.com/maz0r/cu80-flashguide/main/test_binaries/VIA/cu80_v2_iso_rgb.json) |
 
 <details>
 <summary>Layouts</summary>
