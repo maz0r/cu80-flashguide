@@ -55,7 +55,7 @@ The following test binaries were built using the recently released QMK 0.12.8. I
 |RGB|ANSI|[Link](test_binaries/QMK/capsunlocked_cu80_v2_ansi_rgb_default.0.12.8.hex)|
 |RGB|ANSI no-usb-startup-check|[Link](test_binaries/QMK/capsunlocked_cu80_v2_ansi_rgb_default.0.12.8-NUSC.hex)|
 |RGB|ISO|[Link](test_binaries/QMK/capsunlocked_cu80_v2_iso_rgb_default.0.12.8.hex)|
-|RGB|ANSI no-usb-startup-check|[Link](test_binaries/QMK/capsunlocked_cu80_v2_iso_rgb_default.0.12.8-NUSC.hex)|
+|RGB|iso no-usb-startup-check|[Link](test_binaries/QMK/capsunlocked_cu80_v2_iso_rgb_default.0.12.8-NUSC.hex)|
 |VIA|ANSI|[Link](test_binaries/VIA/capsunlocked_cu80_v2_ansi_via.0.12.8.hex)|
 |VIA|ANSI no-usb-startup-check|[Link](test_binaries/VIA/capsunlocked_cu80_v2_ansi_via.0.12.8-NUSC.hex)|
 |VIA|ISO|[Link](test_binaries/VIA/capsunlocked_cu80_v2_iso_via.0.12.8.hex)|
