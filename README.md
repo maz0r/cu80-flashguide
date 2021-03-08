@@ -76,14 +76,14 @@ The following test binaries were built using the recently released QMK 0.12.8. I
 |VIA RGB|ANSI|[ANSI RGB Sideload](test_binaries/VIA/cu80_v2_ansi_rgb.json) |
 |VIA RGB|ISO|[ISO RGB Sideload](test_binaries/VIA/cu80_v2_iso_rgb.json) |
 
-<details>
-<summary>Layouts</summary>
+#### Layouts
 
-![ansi_l1](img/ansi_v2_default_l1.JPG)
-![ansi_l2](img/ansi_v2_default_l2.JPG)
-![iso_l1](img/iso_v2_default_l1.JPG)
-![iso_l2](img/iso_v2_default_l2.JPG)
-</details>  
+|Firmware Name|Link|
+|:---|:---|
+|v2_iso|[UK](docs/cu80_v2_iso-UK.pdf)|
+|v2_iso_rgb|[UK](docs/cu80_v2_iso_rgb-UK.pdf)|
+|v2_ansi|[UK](docs/cu80_v2_ansi-UK.pdf),[US](docs/cu80_v2_ansi-US.pdf)|
+|v2_ansi_rgb|[UK](docs/cu80_v2_ansi_rgb-UK.pdf),[US](docs/cu80_v2_ansi_rgb-US.pdf)|
 
 
 
