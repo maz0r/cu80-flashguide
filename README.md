@@ -42,30 +42,23 @@ In all cases you should also have a working .hex from #latest-firmware to use as
 
 #### Test Binaries
 
-The following test binaries were built using the recently released QMK 0.12.8. If you are having issues with your board not waking from sleep, please give these a go:
+The following test binaries were built using the recently released QMK 0.12.37. If you are having issues with your board not waking from sleep, please give these a go:
 
 **RIGHT CLICK SAVE AS!!**
 
 |Firmware Type |Layout|Link|
 |:---|:---|:---|
-|Default|ANSI|[Link](test_binaries/QMK/capsunlocked_cu80_v2_ansi_default.0.12.8.hex)|
-|Default|ANSI no-usb-startup-check|[Link](test_binaries/QMK/capsunlocked_cu80_v2_ansi_default.0.12.8-NUSC.hex)|
-|Default|ISO|[Link](test_binaries/QMK/capsunlocked_cu80_v2_iso_default.0.12.8.hex)|
-|Default|ISO no-usb-startup-check|[Link](test_binaries/QMK/capsunlocked_cu80_v2_iso_default.0.12.8-NUSC.hex)|
-|RGB|ANSI|[Link](test_binaries/QMK/capsunlocked_cu80_v2_ansi_rgb_default.0.12.8.hex)|
-|RGB|ANSI no-usb-startup-check|[Link](test_binaries/QMK/capsunlocked_cu80_v2_ansi_rgb_default.0.12.8-NUSC.hex)|
-|RGB|ISO|[Link](test_binaries/QMK/capsunlocked_cu80_v2_iso_rgb_default.0.12.8.hex)|
-|RGB|iso no-usb-startup-check|[Link](test_binaries/QMK/capsunlocked_cu80_v2_iso_rgb_default.0.12.8-NUSC.hex)|
-|VIA|ANSI|[Link](test_binaries/VIA/capsunlocked_cu80_v2_ansi_via.0.12.8.hex)|
-|VIA|ANSI no-usb-startup-check|[Link](test_binaries/VIA/capsunlocked_cu80_v2_ansi_via.0.12.8-NUSC.hex)|
-|VIA|ISO|[Link](test_binaries/VIA/capsunlocked_cu80_v2_iso_via.0.12.8.hex)|
-|VIA|ISO no-usb-startup-check|[Link](test_binaries/VIA/capsunlocked_cu80_v2_iso_via.0.12.8-NUSC.hex)|
-|VIA RGB|ANSI|[Link](test_binaries/VIA/capsunlocked_cu80_v2_ansi_rgb_via.0.12.8.hex)|
-|VIA RGB|ANSI no-usb-startup-check|[Link](test_binaries/VIA/capsunlocked_cu80_v2_ansi_rgb_via.0.12.8-NUSC.hex)|
-|VIA RGB|ISO|[Link](test_binaries/VIA/capsunlocked_cu80_v2_iso_rgb_via.0.12.8.hex)|
-|VIA RGB|ISO no-usb-startup-check|[Link](test_binaries/VIA/capsunlocked_cu80_v2_iso_rgb_via.0.12.8-NUSC.hex)|
+|Default|ANSI|[Link](test_binaries/QMK/capsunlocked_cu80_v2_ansi_default-0.12.37.hex)|
+|Default|ISO|[Link](test_binaries/QMK/capsunlocked_cu80_v2_iso_default-0.12.37.hex)|
+|RGB|ANSI|[Link](test_binaries/QMK/capsunlocked_cu80_v2_ansi_rgb_default-0.12.37.hex)|
+|RGB|ISO|[Link](test_binaries/QMK/capsunlocked_cu80_v2_iso_rgb_default-0.12.37.hex)|
+|VIA|ANSI|[Link](test_binaries/VIA/capsunlocked_cu80_v2_ansi_via-0.12.37.hex)|
+|VIA|ISO|[Link](test_binaries/VIA/capsunlocked_cu80_v2_iso_via-0.12.37.hex)|
+|VIA RGB|ANSI|[Link](test_binaries/VIA/capsunlocked_cu80_v2_ansi_rgb_via-0.12.37.hex)|
+|VIA RGB|ISO|[Link](test_binaries/VIA/capsunlocked_cu80_v2_iso_rgb_via-0.12.37.hex)|
 
-#### Test VIA Sideload files
+
+#### Test VIA Sideload files -- note VIA support should now be official.
 
 **RIGHT CLICK SAVE AS!!**
 
@@ -76,14 +69,13 @@ The following test binaries were built using the recently released QMK 0.12.8. I
 |VIA RGB|ANSI|[ANSI RGB Sideload](test_binaries/VIA/cu80_v2_ansi_rgb.json) |
 |VIA RGB|ISO|[ISO RGB Sideload](test_binaries/VIA/cu80_v2_iso_rgb.json) |
 
-#### Layouts
+#### Layouts -- layouts have been standardised.
 
 |Firmware Name|Link|
 |:---|:---|
-|v2_iso|[UK](docs/cu80_v2_iso-UK.pdf)|
-|v2_iso_rgb|[UK](docs/cu80_v2_iso_rgb-UK.pdf)|
-|v2_ansi|[UK](docs/cu80_v2_ansi-UK.pdf),[US](docs/cu80_v2_ansi-US.pdf)|
-|v2_ansi_rgb|[UK](docs/cu80_v2_ansi_rgb-UK.pdf),[US](docs/cu80_v2_ansi_rgb-US.pdf)|
+|v2_iso|[UK](docs/cu80_v2_iso_rgb-UK.pdf)|
+|v2_ansi|[UK](docs/cu80_v2_ansi_rgb-UK.pdf),[US](docs/cu80_v2_ansi_rgb-US.pdf)|
+
 
 
 
